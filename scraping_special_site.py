@@ -72,6 +72,11 @@ class FactoryPatternTestScrape:
             print("NoSuchElementException check your driver ")
 
 
+    def restScrapOlxPreparerLink(self,dicSetupLink):
+        pass
+        # TODO("make method")
+
+
     def findDetalELementScrappScript(self,driverElement, dictCarsElementList):
         time.sleep(2.5)
         dataDateAndPlaceElement = driverElement.find_element(By.CSS_SELECTOR, "p[class='css-veheph er34gjf0']")
@@ -478,12 +483,4 @@ test1.testOlxrCarScrapperByTheNewOnePage()
 test1.printUrlWebsite()
 end_time = time.time()
 execution_time = end_time - start_time
-# print(f"Czas wykonania: {execution_time} sekundy")
-# test1.testMeraSearche()
-# test1.getResultScrapMeraToDict("lampa")
-# test1.prepareDataFromMyAcountOfferSprzedajemy("mckazlazienki@interia.pl", "RCMJn9P")
-# test1.loginToallegroLokalnie()
-# test1.afterMethode()
 
-
-print(DriverType.WebDriverEnum.CHROME.name)
